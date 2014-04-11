@@ -23,8 +23,55 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <!-- Add your site or application content here -->
-    <div class="container" ng-view=""></div>
+    <nav class="top-bar" data-topbar>
+      <ul class="title-area">
+        <li class="name">
+          <h1><a href="#">Agunlar Git App</a></h1>
+        </li>
+        <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+      </ul>
+
+      <section class="top-bar-section">
+        <!-- Left Nav Section -->
+        <ul class="left">
+          <li class="active"><a href="#">Home</a></li>
+        </ul>
+
+        <!-- Right Nav Section -->
+        <ul class="right">
+          <li class="has-dropdown">
+            <a href="#">About</a>
+            <ul class="dropdown">
+              <li><a href="#">About Item 1</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </section>
+    </nav>
+
+    <div>
+      <header class="row">
+        <div class="medium-12 columns">
+          <h1>'Allo, 'Allo!</h1>
+          <p>
+            <img src="images/yeoman.png" alt="I'm Yeoman"><br>
+            Always a pleasure scaffolding your apps.
+          </p>
+          <p><a class="small button" ng-href="#">Splendid!</a></p>
+          <div>
+      </header>
+
+      <!-- Add your site or application content here -->
+      <main role="main" class="row" ng-view=""></main>
+
+      <footer class="row">
+        <div class="medium-12 columns">
+          <p>from the Yeoman team</p>
+        </div>
+      </footer>
+    </div>
+
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
