@@ -1,7 +1,7 @@
 'use strict';
 
 angular
-  .module('provados9App', [
+  .module('angulargitApp', [
     'ngCookies',
     'ngResource',
     'ngSanitize',

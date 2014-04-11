@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('provados9App')
+angular.module('angulargitApp')
   .controller('MainCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',

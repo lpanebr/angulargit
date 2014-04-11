@@ -3,7 +3,7 @@
 describe('Controller: MainCtrl', function () {
 
   // load the controller's module
-  beforeEach(module('provados9App'));
+  beforeEach(module('angulargitApp'));
 
   var MainCtrl,
     scope;
