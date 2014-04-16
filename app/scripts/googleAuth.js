@@ -29,8 +29,11 @@ function onSignInCallback(authResult) {
       $('#gConnect').hide();
 
       //tmp container showing user informations
-      $('#authOn').show('slow');
+      $('#welcome').fadeOut('slow', function(){
+          $('#authOn').fadeIn('slow');
+      });
       $('#authOff').hide('slow');
+
 
       //running profile and people functions
       profile();
@@ -46,7 +49,9 @@ function onSignInCallback(authResult) {
 
       //tmp container showing user informations
       $('#authOn').hide('slow');
-      $('#authOff').show('slow');
+     $('#welcome').fadeOut('slow', function(){
+          $('#authOff').fadeIn('slow');
+      });
 
       //show why user is not connected
       console.log('There was an error: ' + authResult['error']);
@@ -71,8 +76,10 @@ function disconnect(){
       $('#gConnect').show();
 
       //tmp container showing user informations
-      $('#authOn').hide();
-      $('#authOff').show('slow');
+      $('#welcome').fadeOut('slow');
+      $('#authOn').fadeOut('slow', function(){
+          $('#authOff').fadeIn('slow');
+      });
 
       //clear profile and circles tmp area
       $('#profile').empty();
