@@ -1,7 +1,7 @@
 /*global $:false */
 'use strict';
 
-/* Google + Sign In
+/* Google + Sign In (Issue #2)
 *¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
 * Google API to sign-in in a web app using google users credentials
 *
