@@ -11,6 +11,10 @@ body {
     background: #ededed;
 }
 
+h2 {
+    font-size: 1.4375rem;
+}
+
 .appArea {
     float: left;
     width: 100%;
@@ -18,8 +22,47 @@ body {
     background: white;
 }
 
+.count {
+    color:green;
+}
+
+#gConnect, #disconnect {
+    display: none;
+}
+
+#gConnect {
+    padding-top: 7px;
+    margin-right: 5px;
+
+    * {
+        height: 31px !important;
+        width: 135px !important;
+    }
+}
+
 header.appHeader, footer.appFooter {
     padding: 30px 0;
     text-align: center;
 }
 
+//tmp styles (g+ profile info)
+#welcome {
+    text-align: center;
+}
+
+#authOff, #authOn {
+    display: none;
+}
+
+#visiblePeople, #profile {
+    span {
+        font-size: 13px;
+    }
+
+    img {
+        margin-right: 10px;
+        margin-top: 10px;
+        //vertical-align: top;
+        box-shadow: 2px 2px 7px 0 #aaa;
+    }
+}

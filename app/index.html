@@ -46,6 +46,17 @@
             </ul>
           </li>
           <li><a href="#">Contact</a></li>
+          <li id="gConnect">
+              <span class="g-signin"
+                  data-scope="https://www.googleapis.com/auth/plus.login"
+                  data-requestvisibleactions="http://schemas.google.com/AddActivity"
+                  data-clientId="882684106866-em60hppeq3ldujhcab121freom8gs894.apps.googleusercontent.com"
+                  data-callback="onSignInCallback"
+                  data-theme="dark"
+                  data-cookiepolicy="single_host_origin">
+              </span>
+          </li>
+          <li><a id="disconnect" href="#" onclick="disconnect()">Log out</a></li>
         </ul>
       </section>
     </nav>
@@ -53,13 +64,7 @@
     <div class="appArea">
       <header class="appHeader row">
         <div class="medium-12 columns">
-          <h1>'Allo, 'Allo!</h1>
-          <p>
-            <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-            Always a pleasure scaffolding your apps.
-          </p>
-          <p><a class="small button" ng-href="#">Splendid!</a></p>
-          <div>
+          <p><img src="images/yeoman.png" alt="I'm Yeoman"></p>
       </header>
 
       <!-- Add your site or application content here -->
@@ -67,7 +72,7 @@
 
       <footer class="appFooter row">
         <div class="medium-12 columns">
-          <p>from the Yeoman team</p>
+          <p></p>
         </div>
       </footer>
     </div>
@@ -106,7 +111,8 @@
     <!-- endbuild -->
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
-		<script>$(document).foundation();</script>
+        <script src="scripts/googleAuth.js"></script>
+		    <script>$(document).foundation();</script>
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <!-- endbuild -->
