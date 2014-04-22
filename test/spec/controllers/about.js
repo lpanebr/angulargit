@@ -3,7 +3,7 @@
 describe('Controller: AboutCtrl', function () {
 
   // load the controller's module
-  beforeEach(module('angulargitAppApp'));
+  beforeEach(module('angulargitApp'));
 
   var AboutCtrl,
     scope;
