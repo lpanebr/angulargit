@@ -1,0 +1,3 @@
+[addNewRoutes] :: 22/04/2014
++ New Controllers, Views and Routes
++ Fixes Issue #3
