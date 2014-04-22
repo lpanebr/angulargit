@@ -1,6 +1,6 @@
 'use strict';
 
-/* Google + Sign In (Issue #2)
+/* Google + Sign In (Issue #4)
 *¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨¨
 * Google API to sign-in in a web app using google users credentials
 *
