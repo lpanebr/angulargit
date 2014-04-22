@@ -1,4 +1,3 @@
-/*global $:false */
 'use strict';
 
 /* Google + Sign In (Issue #2)
@@ -49,15 +48,16 @@ function onSignInCallback(authResult) {
 
       //tmp container showing user informations
       $('#authOn').hide('slow');
-     $('#welcome').fadeOut('slow', function(){
-          $('#authOff').fadeIn('slow');
-      });
+      $('#welcome').hide();
+      $('#authOff').fadeIn('slow');
 
       //show why user is not connected
       console.log('There was an error: ' + authResult['error']);
 
       //updating user global status
       window.userLogged = false;
+      window.profileInfo = undefined;
+      window.peopleInfo = undefined;
     }
   });
 }
@@ -90,6 +90,8 @@ function disconnect(){
 
       //updating user global status
       window.userLogged = false;
+      window.profileInfo = undefined;
+      window.peopleInfo = undefined;
     },
     error: function(e) {
       console.log(e);
@@ -108,9 +110,7 @@ function profile(){
     //console.log(profile);
 
     //setting global user information to be used in $scope later;
-    window.userName = profile.displayName;
-    window.userImg = profile.image.url;
-    window.userUrl = profile.url;
+    window.profileInfo = profile;
 
     //clean profile area
     $('#profile').empty();
@@ -143,6 +143,8 @@ function people() {
   request.execute(function(people){
     //debbug log
     //console.log(people);
+
+    window.peopleInfo = people;
 
     //clean circles area
     $('#visiblePeople').empty();
